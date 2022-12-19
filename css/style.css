@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        45deg, #baffda, #fffcb4
+    );
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    width: 600px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider .slider-items .slider-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+
+.slider .slider-controls span {
+    cursor: pointer;
+    position: absolute;
+    top: 42%;
+    width: 34px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 32px;
+    color: #303030;
+    background: #ffffffaf;
+    transition: .3s ease;
+}
+
+.slider .slider-controls span:hover {
+    color: #000;
+    background: #fff;
+}
+
+.slider .slider-controls .prev {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.slider .slider-controls .next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.slider .slider-indicators {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+}
+
+.slider .slider-indicators span {
+    cursor: pointer;
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.slider .slider-content {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .slider-content h3 {
+    position: absolute;
+    bottom: 36px;
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Kanit';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .4s;
+}

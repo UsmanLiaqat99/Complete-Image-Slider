@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image slider</title>
+
+    <!-- BoxIcons v2.1.2 -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Kanit Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="slider">
+      <div class="slider-items">
+        <img class="slider-item" src="images/01.jpg" alt="..." />
+        <img class="slider-item" src="images/02.jpg" alt="..." />
+        <img class="slider-item" src="images/03.jpg" alt="..." />
+      </div>
+
+      <div class="slider-controls">
+        <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
+        <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
+      </div>
+
+      <div class="slider-indicators">
+        <span onclick="moveTo(1)"></span>
+        <span onclick="moveTo(2)"></span>
+        <span onclick="moveTo(3)"></span>
+      </div>
+
+      <div class="slider-content">
+        <h3>Ocean View</h3>
+        <h3>Green Valley</h3>
+        <h3>Lake Reflection</h3>
+      </div>
+    </div>
+
+    <!-- JS File -->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
